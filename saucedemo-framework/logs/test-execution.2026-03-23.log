@@ -1,0 +1,259 @@
+2026-03-23 21:10:47 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:10:47 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:10:49 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:10:49 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/win64/chromedriver-win64.zip
+2026-03-23 21:10:50 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2026-03-23 21:10:50 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:11:03 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:11:03 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:11:03 [main] INFO  c.s.tests.scenarios.LoginTest - ? testInvalidCredentialsShowError
+2026-03-23 21:11:04 [main] INFO  c.s.framework.pages.LoginPage - Entering username: wrong_user
+2026-03-23 21:11:05 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:11:05 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:11:05 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:11:06 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:11:06 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:11:06 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:11:06 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:11:06 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:11:06 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:11:06 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:11:15 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - ? testLoginPageIsLoaded
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:11:16 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:11:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:11:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:11:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:11:26 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:11:27 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:11:27 [main] INFO  c.s.tests.scenarios.LoginTest - ? testSuccessfulLogin
+2026-03-23 21:11:27 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:11:27 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:11:27 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:11:28 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:11:28 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:11:28 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:11:28 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:11:28 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:11:28 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:11:28 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:11:28 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:11:38 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:11:38 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:11:38 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddAndRemoveItemFullScenario
+2026-03-23 21:11:38 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:11:39 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:11:39 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:11:50 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:11:50 [main] INFO  c.s.framework.pages.InventoryPage - Removing item from cart: Sauce Labs Backpack
+2026-03-23 21:12:01 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:12:01 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:12:01 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:12:01 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:12:01 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:12:01 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:12:01 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:12:01 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:12:09 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:12:10 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:12:10 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddItemToCart
+2026-03-23 21:12:10 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:12:11 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:12:11 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:12:21 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:12:32 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:12:32 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:12:32 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:12:32 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:12:32 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:12:32 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:12:32 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:12:32 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:12:40 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:12:41 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:12:41 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testRemoveItemFromCart
+2026-03-23 21:12:41 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:12:42 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:12:42 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:12:42 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:12:42 [main] INFO  c.s.framework.pages.InventoryPage - Removing item from cart: Sauce Labs Backpack
+2026-03-23 21:12:53 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:12:53 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:12:53 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:12:53 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:14:05 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:05 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:14:06 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:14:06 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:14:14 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:14:15 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:14:15 [main] INFO  c.s.tests.scenarios.LoginTest - ? testInvalidCredentialsShowError
+2026-03-23 21:14:15 [main] INFO  c.s.framework.pages.LoginPage - Entering username: wrong_user
+2026-03-23 21:14:15 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:14:15 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:14:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:14:16 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:14:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:14:16 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:16 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:16 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:14:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:14:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:14:24 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - ? testLoginPageIsLoaded
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:14:25 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:25 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:14:25 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:14:25 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:14:34 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:14:35 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:14:35 [main] INFO  c.s.tests.scenarios.LoginTest - ? testSuccessfulLogin
+2026-03-23 21:14:35 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:14:35 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:14:35 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:14:35 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:14:36 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:14:36 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:14:36 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:14:36 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:14:36 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:14:36 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:14:36 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:14:43 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:14:44 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:14:44 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddAndRemoveItemFullScenario
+2026-03-23 21:14:44 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:14:44 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:14:44 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:14:55 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:15:15 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:15:16 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:15:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:15:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:15:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:15:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:15:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:15:16 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:15:23 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:15:24 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:15:24 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddItemToCart
+2026-03-23 21:15:24 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:15:24 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:15:24 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:15:34 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:15:55 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:15:56 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:15:56 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:15:56 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:15:56 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:15:56 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:15:56 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:15:56 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:16:03 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:16:04 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:16:04 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testRemoveItemFromCart
+2026-03-23 21:16:04 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:16:04 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:16:04 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:16:05 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:16:05 [main] INFO  c.s.framework.pages.InventoryPage - Removing item from cart: Sauce Labs Backpack
+2026-03-23 21:16:15 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:16:15 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:16:15 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:16:15 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:20:26 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:26 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:20:27 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:20:27 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:20:37 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:20:38 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:20:38 [main] INFO  c.s.tests.scenarios.LoginTest - ? testInvalidCredentialsShowError
+2026-03-23 21:20:38 [main] INFO  c.s.framework.pages.LoginPage - Entering username: wrong_user
+2026-03-23 21:20:38 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:20:38 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:20:39 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:20:39 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:20:39 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:20:39 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:39 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:39 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:20:39 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:20:39 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:20:47 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - ? testLoginPageIsLoaded
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:20:48 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:48 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: initialising browser
+2026-03-23 21:20:48 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:20:48 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:20:56 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:20:57 [main] INFO  c.s.tests.scenarios.LoginTest - TEST SETUP: complete
+2026-03-23 21:20:57 [main] INFO  c.s.tests.scenarios.LoginTest - ? testSuccessfulLogin
+2026-03-23 21:20:57 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:20:57 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:20:57 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:20:58 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: closing browser
+2026-03-23 21:20:58 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:20:58 [main] INFO  c.s.tests.scenarios.LoginTest - TEST TEARDOWN: complete
+2026-03-23 21:20:58 [main] INFO  c.s.tests.scenarios.LoginTest - ??????????????????????????????????????????
+2026-03-23 21:20:58 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:20:58 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:20:58 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:20:58 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:21:05 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:21:06 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:21:06 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddAndRemoveItemFullScenario
+2026-03-23 21:21:06 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:21:06 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:21:06 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:21:07 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:21:07 [main] INFO  c.s.framework.pages.InventoryPage - Removing item from cart: Sauce Labs Backpack
+2026-03-23 21:21:07 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:21:07 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:21:07 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:21:07 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:21:07 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:21:07 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:21:07 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:21:07 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:21:15 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:21:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:21:16 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testAddItemToCart
+2026-03-23 21:21:16 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:21:16 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:21:16 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:21:16 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:21:17 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:21:17 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:21:17 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:21:17 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:21:17 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????
+2026-03-23 21:21:17 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: initialising browser
+2026-03-23 21:21:17 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-03-23 21:21:17 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-03-23 21:21:25 [main] INFO  c.s.framework.driver.DriverManager - Browser 'chrome' initialized (headless=false)
+2026-03-23 21:21:26 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST SETUP: complete
+2026-03-23 21:21:26 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ? testRemoveItemFromCart
+2026-03-23 21:21:26 [main] INFO  c.s.framework.pages.LoginPage - Entering username: standard_user
+2026-03-23 21:21:26 [main] INFO  c.s.framework.pages.LoginPage - Entering password
+2026-03-23 21:21:26 [main] INFO  c.s.framework.pages.LoginPage - Clicking login button
+2026-03-23 21:21:26 [main] INFO  c.s.framework.pages.InventoryPage - Adding item to cart: Sauce Labs Backpack
+2026-03-23 21:21:27 [main] INFO  c.s.framework.pages.InventoryPage - Removing item from cart: Sauce Labs Backpack
+2026-03-23 21:21:27 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: closing browser
+2026-03-23 21:21:27 [main] INFO  c.s.framework.driver.DriverManager - Browser session closed.
+2026-03-23 21:21:27 [main] INFO  c.saucedemo.tests.scenarios.CartTest - TEST TEARDOWN: complete
+2026-03-23 21:21:27 [main] INFO  c.saucedemo.tests.scenarios.CartTest - ??????????????????????????????????????????

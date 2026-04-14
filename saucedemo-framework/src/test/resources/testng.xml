@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemo Full Test Suite" verbose="1" parallel="none">
+
+    <listeners>
+        <listener class-name="com.saucedemo.tests.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login – Positive and Negative Scenarios">
+        <classes>
+            <class name="com.saucedemo.tests.scenarios.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Inventory – Products and Cart Badge Scenarios">
+        <classes>
+            <class name="com.saucedemo.tests.scenarios.InventoryTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Page – Positive and Negative Scenarios">
+        <classes>
+            <class name="com.saucedemo.tests.scenarios.CartPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkout – Full Flow and Validation Scenarios">
+        <classes>
+            <class name="com.saucedemo.tests.scenarios.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
