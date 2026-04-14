@@ -37,6 +37,7 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: Run Maven tests
+        working-directory: saucedemo-framework
         run: mvn test -Dheadless=true -Dbrowser=chrome
 
       - name: Upload HTML report
@@ -44,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extent-report-${{ github.run_number }}
-          path: reports/html/
+          path: saucedemo-framework/reports/html/
           retention-days: 30
 
       - name: Upload PDF report
@@ -52,7 +53,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pdf-report-${{ github.run_number }}
-          path: reports/pdf/
+          path: saucedemo-framework/reports/pdf/
           retention-days: 30
 
       - name: Upload screenshots
@@ -60,7 +61,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: screenshots-${{ github.run_number }}
-          path: reports/screenshots/
+          path: saucedemo-framework/reports/screenshots/
           retention-days: 30
 
       - name: Publish test results
@@ -68,5 +69,5 @@ jobs:
         uses: dorny/test-reporter@v1
         with:
           name: TestNG Results
-          path: target/surefire-reports/*.xml
+          path: saucedemo-framework/target/surefire-reports/*.xml
           reporter: java-junit
