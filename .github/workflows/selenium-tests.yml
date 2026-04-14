@@ -10,6 +10,9 @@ jobs:
   test:
     name: Run Selenium Suite
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
 
     steps:
 
@@ -68,4 +71,4 @@ jobs:
         if: always()
         uses: EnricoMi/publish-unit-test-result-action@v2
         with:
-          files: saucedemo-framework/target/surefire-reports/*.xml
+          files: saucedemo-framework/target/surefire-reports/TEST-*.xml
