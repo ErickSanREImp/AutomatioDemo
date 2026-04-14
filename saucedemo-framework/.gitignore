@@ -2,7 +2,7 @@
 target/
 
 # Generated test reports (re-created on every run)
-reports/
+/reports/
 
 # IDE files
 .idea/
