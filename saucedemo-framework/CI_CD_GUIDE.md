@@ -44,7 +44,7 @@ In the project root (`saucedemo-framework/`), create a file called `.gitignore` 
 target/
 
 # Generated test reports (created fresh on every pipeline run)
-reports/
+/reports/
 
 # IDE files
 .idea/
@@ -57,6 +57,8 @@ Thumbs.db
 ```
 
 > **Why?** The `reports/` folder is generated during each test run. It must not be committed — the pipeline will produce its own copy.
+> 
+> ⚠️ **Important:** Use `/reports/` with a leading slash, NOT `reports/`. Without the slash, Git also ignores any folder named `reports` deeper in the tree — including the Java source package `com.saucedemo.framework.reports`, which breaks compilation in CI.
 
 ### 0-B. Enable Headless Mode for CI
 
@@ -107,35 +109,37 @@ You add a YAML file to your repository that tells GitHub *"when code is pushed, 
 
 ### A-1. Create the workflow file
 
-Inside the project, create the folder structure exactly as shown:
+> ⚠️ **Critical:** The `.github/` folder must be at the **repository root**, not inside `saucedemo-framework/`. GitHub only scans for workflows at the top level of the repo.
+
+If your repo root is `~/Windsurf/Test/`, create the folder structure there:
 
 ```
-saucedemo-framework/
-└── .github/
-    └── workflows/
-        └── selenium-tests.yml      ← create this file
+Windsurf/Test/               ← repo root (where you ran git init)
+├── .github/
+│   └── workflows/
+│       └── selenium-tests.yml      ← create this file here
+└── saucedemo-framework/
+    └── pom.xml
 ```
 
 Paste the following content into `selenium-tests.yml`:
 
 ```yaml
-# ─────────────────────────────────────────────────────────────────────────────
-# Name shown in the GitHub Actions tab
 name: SauceDemo Selenium Tests
 
-# ─────────────────────────────────────────────────────────────────────────────
-# When to run this pipeline
 on:
   push:
     branches: [ "main" ]          # runs on every push to main
   pull_request:
     branches: [ "main" ]          # runs on every pull request targeting main
 
-# ─────────────────────────────────────────────────────────────────────────────
 jobs:
   test:
     name: Run Selenium Suite
     runs-on: ubuntu-latest        # GitHub-hosted Linux runner (free)
+    permissions:
+      checks: write               # required to publish test result summaries
+      pull-requests: write        # required to post comments on PRs
 
     steps:
 
@@ -158,7 +162,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      # 4. Install Google Chrome (the runner has it pre-installed, this ensures latest)
+      # 4. Install Google Chrome
       - name: Install Google Chrome
         run: |
           wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -167,18 +171,20 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       # 5. Run all 39 tests
-      #    -Dheadless=true    → no screen on the server
-      #    -Dbrowser=chrome   → use Chrome
+      #    working-directory → pom.xml lives inside saucedemo-framework/, not at repo root
+      #    -Dheadless=true   → no screen on CI server
+      #    -Dbrowser=chrome  → use Chrome
       - name: Run Maven tests
+        working-directory: saucedemo-framework
         run: mvn test -Dheadless=true -Dbrowser=chrome
 
-      # 6. Upload the HTML report so you can download it after each run
+      # 6. Upload the HTML report
       - name: Upload HTML report
         if: always()              # run even if tests fail
         uses: actions/upload-artifact@v4
         with:
           name: extent-report-${{ github.run_number }}
-          path: reports/html/
+          path: saucedemo-framework/reports/html/
           retention-days: 30
 
       # 7. Upload the PDF report
@@ -187,7 +193,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pdf-report-${{ github.run_number }}
-          path: reports/pdf/
+          path: saucedemo-framework/reports/pdf/
           retention-days: 30
 
       # 8. Upload failure screenshots
@@ -196,17 +202,16 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: screenshots-${{ github.run_number }}
-          path: reports/screenshots/
+          path: saucedemo-framework/reports/screenshots/
           retention-days: 30
 
       # 9. Publish TestNG results as a structured test summary
+      #    Uses TEST-*.xml (JUnit format) — NOT testng-results.xml (TestNG native format)
       - name: Publish test results
         if: always()
-        uses: dorny/test-reporter@v1
+        uses: EnricoMi/publish-unit-test-result-action@v2
         with:
-          name: TestNG Results
-          path: target/surefire-reports/*.xml
-          reporter: java-junit
+          files: saucedemo-framework/target/surefire-reports/TEST-*.xml
 ```
 
 ### A-2. Commit and push the workflow file
@@ -435,6 +440,54 @@ git push   # enter username + personal access token when prompted
 
 ---
 
+### ❌ `error: src refspec main does not match any`
+**Cause:** Your local branch is named `master` (older Git default) but you are pushing to `main`.  
+**Fix:** Rename the branch before pushing:
+```bash
+git branch -m master main
+git push -u origin main
+```
+
+---
+
+### ❌ `rejected — non-fast-forward` on push
+**Cause:** GitHub created a `README.md` when you made the repo, so the remote has commits your local copy does not.
+**Fix:** Pull first, then push:
+```bash
+git pull origin main --allow-unrelated-histories
+git add .
+git commit -m "Merge remote initial files"
+git push -u origin main
+```
+
+---
+
+### ❌ `COMPILATION ERROR: package com.saucedemo.framework.reports does not exist`
+**Cause:** The `.gitignore` pattern `reports/` (without leading `/`) matched the Java source package `com/saucedemo/framework/reports/` and excluded those files from the repo.  
+**Fix:** Use `/reports/` with a leading slash in `saucedemo-framework/.gitignore`. Then force-add the missing files:
+```bash
+git add -f saucedemo-framework/src/main/java/com/saucedemo/framework/reports/
+git add saucedemo-framework/.gitignore
+git commit -m "Fix: anchor /reports/ in gitignore, add missing source package"
+git push
+```
+
+---
+
+### ❌ `Publish test results` step fails — `TypeError: Cannot read properties of undefined`
+**Cause:** `dorny/test-reporter@v1` has a known bug parsing Surefire XML. Also, it picks up `testng-results.xml` which is TestNG native format (not JUnit), which it cannot parse.  
+**Fix:** Use `EnricoMi/publish-unit-test-result-action@v2` and target only `TEST-*.xml` files:
+```yaml
+      - name: Publish test results
+        if: always()
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        with:
+          files: saucedemo-framework/target/surefire-reports/TEST-*.xml
+```
+Also add `permissions: checks: write` to the job (see the working YAML above).
+
+---
+
 ## Next Steps — Once the Pipeline Is Green
 
 | Enhancement | How |
@@ -450,17 +503,21 @@ git push   # enter username + personal access token when prompted
 ## File Locations Summary
 
 ```
-saucedemo-framework/
+Windsurf/Test/                        ← Git repository root (git init runs here)
 ├── .github/
 │   └── workflows/
-│       └── selenium-tests.yml        ← GitHub Actions pipeline (Option A)
-├── src/test/resources/
-│   └── config.properties             ← set headless=true for CI
-├── reports/                          ← generated at runtime, NOT committed
-│   ├── html/                         ← ExtentReports HTML
-│   ├── pdf/                          ← PDF summary
-│   └── screenshots/                  ← failure screenshots
-└── target/
-    └── surefire-reports/             ← TestNG XML (read by pipeline for test counts)
-        └── *.xml
+│       └── selenium-tests.yml        ← GitHub Actions pipeline ⚠️ must be at repo root
+├── .gitignore                        ← repo-level ignore rules
+└── saucedemo-framework/              ← Maven project root (pom.xml lives here)
+    ├── .gitignore                    ← use /reports/ with leading slash
+    ├── src/test/resources/
+    │   └── config.properties         ← headless=false locally; override with -Dheadless=true in CI
+    ├── reports/                      ← generated at runtime, NOT committed
+    │   ├── html/                     ← ExtentReports HTML
+    │   ├── pdf/                      ← PDF summary
+    │   └── screenshots/              ← failure screenshots
+    └── target/
+        └── surefire-reports/         ← Surefire XML output
+            ├── TEST-*.xml            ← JUnit format ← used by pipeline
+            └── testng-results.xml    ← TestNG native format ← ignored by pipeline
 ```
